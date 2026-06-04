@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="author" content="Joshua Lear, Jacob Lavra, and Ethan Potter">
+<meta name="keywords" content="Task Manager">
+<meta name="description" content="Task Manager">  
 <meta name="viewport">
+<title>Task Manager</title>
 <script>
   var theArray = [];
-  var timeArray = [];
   function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("class").value;
@@ -39,19 +42,15 @@
     }
   // function dueToday() {
   //   for (i=0; i < theArray.length; i++) {
-  //     var todayIsh = theArray[i].indexOf("2022");
-  //     var year1 = theArray[i].substring(todayIsh, todayIsh+4);
-  //     var year2 = theArray[i].substring(todayIsh-5, todayIsh);
-  //     var year3 = year2+year1;
+  //
+  //     var todayIsh = theArray[i];
+  //     var todayIsh = todayIsh.substring()
   //     var ex = new Date();
   //     if (ex < 10) {
   //       var ex = "0" + ex;
   //     }
-  //     if (year3 == ex.substring(0,10)) {
-  //       timeArray.push(year3);
-  //     }
-  //     var e = length.timeArray;
-  //     document.getElementById("boot").innerHTML = "You have " + e + " assignments due today.";
+  //     if (todayIsh == ex.substring(0,10)) {}
+  //
   //         }
   //   }
 
@@ -104,7 +103,6 @@ body {
   width: 150px;
   border-radius: 50%;
 }
-
 </style>
 </head>
 <body style="background-color:#a08cff">
@@ -157,13 +155,12 @@ body {
     <center><div><big>Welcome to the Task Manager!</big></div>
 
     <p>It is currently: <br> <span id="datetime"></span></p><script>
-      var dt = new Date();
-      document.getElementById("datetime").innerHTML=dt.toLocaleString();
-    </script>
+      var dt = new Date(); document.getElementById("datetime").
+      innerHTML=dt.toLocaleString();</script>
 
     <!-- <p>You have <b>__<b/> task(s) due today<p/>
     <p>You have <b>__<b/> task(s) due in the next 7 days<p/> -->
-    <!-- <p id="boot"></p> -->
+
 
     </center>
     <hr/>
@@ -202,7 +199,7 @@ body {
 
 <script>
 var red =
-Math.floor(Math.random() * 10);
+Math.floor(Math.random() * 12);
 if (red == 0) {
   document.getElementById("demo").innerHTML = "The development team of this site had no clue what they were doing!";
 } else if (red == 1) {
@@ -210,19 +207,7 @@ if (red == 0) {
 } else if (red == 2) {
   document.getElementById("demo").innerHTML = "What is the real meaning of truth?";
 } else if (red == 3) {
-  // document.getElementById("demo").innerHTML = "New features coming!"
-  // document.getElementById("demo").innerHTML =
-  //  "               ***********
-  //  \n              ***************
-  //  \n              ***   ***   ***
-  //  \n              ***   ***   ***
-  //  \n              ***************
-  //  \n               **  *****  **
-  //  \n                **  ***  **
-  //  \n                 **     **
-  //  \n                  *******
-  //  \n                   *****"
-  document.getElementById("demo").innerHTML = "Users are mentally rich and poor. You decide."
+  document.getElementById("demo").innerHTML = "New features coming!"
 } else if (red == 4) {
   document.getElementById("demo").innerHTML = '"Wait, is this site even functional???"-The Developers'
 } else if (red == 5) {
@@ -232,10 +217,10 @@ if (red == 0) {
 } else if (red == 7) {
   document.getElementById("demo").innerHTML = "Cheating is punished by the one above!"
 } else if (red == 8) {
-  document.getElementById("demo").innerHTML = "Your sister likes to use this website..."
+  document.getElementById("demo").innerHTM = "Your sister likes to use this website..."
 } else if (red == 9) {
   document.getElementById("demo").innerHTML = "Thoughts on Minecraft Bedrock Edition?!?"
-} else if (red == 10) {
+} else {
   document.getElementById("demo").innerHTML = "Users are mentally rich and poor. You decide."
 }
 </script>
